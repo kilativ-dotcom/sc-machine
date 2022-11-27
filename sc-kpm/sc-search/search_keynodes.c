@@ -16,6 +16,7 @@
 #include <glib.h>
 
 sc_addr keynode_question_search_atomic_commands;
+sc_addr keynode_question_search_all_nodes_in_set;
 
 sc_addr keynode_question_all_output_const_pos_arc;
 sc_addr keynode_question_all_input_const_pos_arc;
@@ -63,7 +64,8 @@ sc_addr keynode_languages;
 sc_addr keynode_rrel_1;
 sc_addr keynode_rrel_2;
 
-char const keynode_question_search_atomic_commands_str[] = "question_search_atomic_commands";
+const char keynode_question_search_atomic_commands_str[] = "question_search_atomic_commands";
+const char keynode_question_search_all_nodes_in_set_str[] = "question_search_all_nodes_in_set";
 
 char const keynode_question_all_output_const_pos_arc_str[] = "question_search_all_output_const_pos_arcs";
 char const keynode_question_all_input_const_pos_arc_str[] = "question_search_all_input_const_pos_arcs";
@@ -147,6 +149,7 @@ sc_result search_keynodes_initialize(sc_memory_context * ctx, sc_addr const init
   RESOLVE_KEYNODE(ctx, keynode_typical_sc_neighborhood, init_memory_generated_structure);
   RESOLVE_KEYNODE(ctx, keynode_sc_neighborhood, init_memory_generated_structure);
   RESOLVE_KEYNODE(ctx, keynode_question_search_atomic_commands, init_memory_generated_structure);
+  RESOLVE_KEYNODE(ctx, keynode_question_search_all_nodes_in_set, init_memory_generated_structure);
 
   RESOLVE_KEYNODE(ctx, keynode_ui_main_menu, init_memory_generated_structure);
   RESOLVE_KEYNODE(ctx, keynode_ui_user_command_class_atom, init_memory_generated_structure);
