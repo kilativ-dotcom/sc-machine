@@ -38,7 +38,7 @@ sc_addr keynode_nrel_ui_commands_decomposition;
 sc_addr keynode_sc_definition;
 sc_addr keynode_sc_explanation;
 sc_addr keynode_sc_note;
-sc_addr keynode_nrel_sc_text_translation_value;
+sc_addr keynode_nrel_sc_text_translation;
 
 sc_addr keynode_question;
 sc_addr keynode_question_initiated;
@@ -108,13 +108,13 @@ char const keynode_order_relation_str[] = "order_relation";
 char const keynode_nonbinary_relation_str[] = "nonbinary_relation";
 char const keynode_typical_sc_neighborhood_str[] = "typical_semantic_neighbourhood";
 
-const char keynode_ui_main_menu_str[] = "keynode_ui_main_menu";
-const char keynode_ui_user_command_class_atom_str[] = "keynode_ui_user_command_class_atom";
-const char keynode_nrel_ui_commands_decomposition_str[] = "keynode_nrel_ui_commands_decomposition";
-const char keynode_sc_definition_str[] = "keynode_sc_definition";
-const char keynode_sc_explanation_str[] = "keynode_sc_explanation";
-const char keynode_sc_note_str[] = "keynode_sc_note";
-const char keynode_nrel_sc_text_translation_value_str[] = "keynode_nrel_sc_text_translation_value";
+const char keynode_ui_main_menu_str[] = "ui_main_menu";
+const char keynode_ui_user_command_class_atom_str[] = "ui_user_command_class_atom";
+const char keynode_nrel_ui_commands_decomposition_str[] = "nrel_ui_commands_decomposition";
+const char keynode_sc_definition_str[] = "sc_definition";
+const char keynode_sc_explanation_str[] = "sc_explanation";
+const char keynode_sc_note_str[] = "sc_note";
+const char keynode_nrel_sc_text_translation_str[] = "nrel_sc_text_translation";
 
 char const keynode_nrel_identification_str[] = "nrel_identification";
 char const keynode_nrel_translation_str[] = "nrel_sc_text_translation";
