@@ -133,8 +133,6 @@ protected:
       ScAddr const & objAddr = iter->Get(2);
 
       auto const & it = m_elements.find(objAddr.Hash());
-      if (it != m_elements.cend() && m_context.GetElementType(it->second.GetAddr()).IsConst())
-        continue;
       ObjectInfo obj = it == m_elements.cend() ? CollectObjectInfo(objAddr) : it->second;
       if (obj.IsUnknown())
         return ScTemplate::Result(false, "Can't determine type of ScElement");  // template corrupted
