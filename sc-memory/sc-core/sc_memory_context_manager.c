@@ -163,9 +163,9 @@ error:
 
 sc_bool _sc_memory_context_is_pending(sc_memory_context const * ctx)
 {
-  sc_monitor_acquire_write((sc_monitor *)&ctx->monitor);
+  sc_monitor_acquire_read((sc_monitor *)&ctx->monitor);
   sc_bool result = ((sc_memory_context *)ctx)->flags & SC_CONTEXT_FLAG_PENDING_EVENTS;
-  sc_monitor_release_write((sc_monitor *)&ctx->monitor);
+  sc_monitor_release_read((sc_monitor *)&ctx->monitor);
   return result;
 }
 
