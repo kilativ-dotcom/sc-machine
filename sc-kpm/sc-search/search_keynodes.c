@@ -169,7 +169,7 @@ sc_result search_keynodes_initialize(sc_memory_context * ctx, sc_addr const init
   RESOLVE_KEYNODE(ctx, keynode_sc_definition, init_memory_generated_structure);
   RESOLVE_KEYNODE(ctx, keynode_sc_explanation, init_memory_generated_structure);
   RESOLVE_KEYNODE(ctx, keynode_sc_note, init_memory_generated_structure);
-  RESOLVE_KEYNODE(ctx, keynode_nrel_sc_text_translation_value, init_memory_generated_structure);
+  RESOLVE_KEYNODE(ctx, keynode_nrel_sc_text_translation, init_memory_generated_structure);
 
   RESOLVE_KEYNODE(ctx, keynode_rrel_1, init_memory_generated_structure);
   RESOLVE_KEYNODE(ctx, keynode_rrel_2, init_memory_generated_structure);

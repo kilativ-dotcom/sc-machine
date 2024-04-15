@@ -15,13 +15,10 @@ void process_command_decompositions(sc_addr command, sc_addr answer, sc_addr che
 
 sc_result agent_search_atomic_commands(const sc_event * event, sc_addr arg)
 {
-  printf("start agent_search_atomic_commands\n");
   sc_addr question, answer, checked_commands;
 
   if (!sc_memory_get_arc_end(s_default_ctx, arg, &question))
     return SC_RESULT_ERROR_INVALID_PARAMS;
-
-  printf("agent_search_atomic_commands arg is question\n");
 
   if (sc_helper_check_arc(
           s_default_ctx,
@@ -30,8 +27,6 @@ sc_result agent_search_atomic_commands(const sc_event * event, sc_addr arg)
           sc_type_arc_pos_const_perm
           ) == SC_FALSE)
     return SC_RESULT_ERROR_INVALID_TYPE;
-
-  printf("agent_search_atomic_commands question is correct\n");
 
   answer = create_answer_node();
   checked_commands = sc_memory_node_new(s_default_ctx, sc_type_node | sc_type_const);
@@ -42,7 +37,6 @@ sc_result agent_search_atomic_commands(const sc_event * event, sc_addr arg)
   connect_answer_to_question(question, answer);
   finish_question(question);
 
-  printf("finish agent_search_atomic_commands\n");
   return SC_RESULT_OK;
 }
 

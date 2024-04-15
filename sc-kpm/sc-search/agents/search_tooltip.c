@@ -13,7 +13,6 @@ sc_bool find_tooltip(sc_addr node, sc_addr lang, sc_addr class, sc_addr * toolti
 
 sc_result agent_search_tooltip(const sc_event * event, sc_addr arg)
 {
-  printf("start agent_search_tooltip\n");
   sc_addr question, answer, tooltip;
   sc_iterator5 *it_rrel_argument;
   sc_addr node, lang;
@@ -76,7 +75,6 @@ sc_result agent_search_tooltip(const sc_event * event, sc_addr arg)
     connect_answer_to_question(question, answer);
     finish_question(question);
 
-    printf("finish agent_search_tooltip\n");
     return SC_RESULT_OK;
 }
 
