@@ -203,6 +203,7 @@ See documentation, to learn more about using new API.
 
 ### Changed
 
+- Rewrite gwf-translator from py to cpp
 - Rename action answer to action result
 - Rename `ScWait` to `ScWaiter`
 - Rename `ScEvent` to `ScEventSubscription`
