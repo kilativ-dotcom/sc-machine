@@ -138,6 +138,7 @@ std::pair<std::shared_ptr<ScsTree>, std::shared_ptr<ScsTree>> CompareScsFiles(
 
   return std::make_pair(exampleTree, resultTree);
 }
+
 /*
 TEST_F(GWFTranslatorTest, EmptyFile)
 {
