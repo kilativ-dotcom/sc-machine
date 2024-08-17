@@ -14,8 +14,6 @@
 #include "../../src/gwf_translator.hpp"
 #include "../../src/sc_scs_tree.hpp"
 
-#define BASE_TEST_PATH "/home/iromanchuk/sc-machine/sc-tools/sc-builder/tests/kb/tests-gwf-to-scs/"
-
 using GWFTranslatorTest = ScBuilderTest;
 
 #include <iostream>
@@ -25,6 +23,8 @@ using GWFTranslatorTest = ScBuilderTest;
 #include <map>
 #include <memory>
 #include <algorithm>
+
+#define BASE_TEST_PATH SC_BUILDER_KB "/tests-gwf-to-scs/"
 
 std::string RemoveEmptyLines(std::string const & input)
 {
