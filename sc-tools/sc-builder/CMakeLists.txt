@@ -32,4 +32,3 @@ endif()
 if(${SC_BUILD_TESTS})
     include(tests/tests.cmake)
 endif()
-
