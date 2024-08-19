@@ -121,7 +121,7 @@ std::string ReadFileToString(std::string const & filePath)
   }
 }
 
-std::pair<std::shared_ptr<ScsTree>, std::shared_ptr<ScsTree>> CompareSCSFiles(
+std::pair<std::shared_ptr<SCsTree>, std::shared_ptr<SCsTree>> CompareSCsFiles(
     std::string const & fileName,
     GWFTranslator translator)
 {
@@ -133,8 +133,8 @@ std::pair<std::shared_ptr<ScsTree>, std::shared_ptr<ScsTree>> CompareSCSFiles(
 
   const std::string exampleScs = RemoveEmptyLines(ReadFileToString(scsFilePath));
 
-  auto const exampleTree = ScsTree::ParseTree(exampleScs);
-  auto const resultTree = ScsTree::ParseTree(scsStr);
+  auto const exampleTree = SCsTree::ParseTree(exampleScs);
+  auto const resultTree = SCsTree::ParseTree(scsStr);
 
   return std::make_pair(exampleTree, resultTree);
 }
@@ -162,8 +162,8 @@ TEST_F(GWFTranslatorTest, EmptyContour)
 {
   GWFTranslator translator(*m_ctx);
 
-  auto const & trees = CompareSCSFiles("empty_contour.gwf", translator);
-  bool const diff = ScsTree::CompareTrees(trees)->empty();
+  auto const & trees = CompareSCsFiles("empty_contour.gwf", translator);
+  bool const diff = SCsTree::CompareTrees(trees)->empty();
 
   EXPECT_TRUE(diff);
 }
@@ -172,8 +172,8 @@ TEST_F(GWFTranslatorTest, LotOfContours)
 {
   GWFTranslator translator(*m_ctx);
 
-  auto const & trees = CompareSCSFiles("lot_of_contours.gwf", translator);
-  bool const diff = ScsTree::CompareTrees(trees)->empty();
+  auto const & trees = CompareSCsFiles("lot_of_contours.gwf", translator);
+  bool const diff = SCsTree::CompareTrees(trees)->empty();
 
   EXPECT_TRUE(diff);
 }
@@ -182,8 +182,8 @@ TEST_F(GWFTranslatorTest, ContentTypes)
 {
   GWFTranslator translator(*m_ctx);
 
-  auto const & trees = CompareSCSFiles("content_types.gwf", translator);
-  bool const diff = ScsTree::CompareTrees(trees)->empty();
+  auto const & trees = CompareSCsFiles("content_types.gwf", translator);
+  bool const diff = SCsTree::CompareTrees(trees)->empty();
 
   EXPECT_TRUE(diff);
 
