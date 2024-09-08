@@ -6,17 +6,12 @@
 
 #pragma once
 
-#include "translator.hpp"
-#include "scs_translator.hpp"
-#include "builder_defines.hpp"
-
-#include "gwf_parser.hpp"
-#include "sc_scs_writer.hpp"
-#include "gwf_translator_const.hpp"
-
 #include <vector>
 #include <string>
 #include <list>
+
+#include "translator.hpp"
+#include "scs_translator.hpp"
 
 class GWFTranslator : public Translator
 {
