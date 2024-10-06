@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "sc_memory_config.hpp"
+#include <sc_memory_config.hpp>
 
 void PrintStartMessage();
 

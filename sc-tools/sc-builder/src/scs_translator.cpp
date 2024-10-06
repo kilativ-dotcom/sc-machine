@@ -6,14 +6,19 @@
 
 #include "scs_translator.hpp"
 
-#include "sc-memory/sc_memory.hpp"
-#include "sc-memory/sc_scs_helper.hpp"
-
-#include "sc-core/sc-store/sc-container/sc-string/sc_string.h"
-
 #include <regex>
 #include <utility>
 #include <filesystem>
+
+#include <sc-memory/sc_memory.hpp>
+#include <sc-memory/sc_scs_helper.hpp>
+
+extern "C"
+{
+#include "sc-core/sc-store/sc-container/sc-string/sc_string.h"
+}
+
+#include "sc_scg_to_scs_types_converter.hpp"
 
 namespace impl
 {

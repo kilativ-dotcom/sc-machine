@@ -6,7 +6,7 @@
 
 #include "translator.hpp"
 
-#include "sc-memory/sc_memory.hpp"
+#include <sc-memory/sc_memory.hpp>
 
 Translator::Translator(ScMemoryContext & ctx)
   : m_ctx(ctx)

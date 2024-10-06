@@ -5,12 +5,12 @@
  */
 
 #include "builder.hpp"
-#include "scs_translator.hpp"
-#include "gwf_translator.hpp"
 
 #include <memory>
-
 #include <fstream>
+
+#include "scs_translator.hpp"
+#include "gwf_translator.hpp"
 
 Builder::Builder() = default;
 
