@@ -14,11 +14,10 @@ add_library(sc-builder-lib SHARED ${SOURCES})
 target_link_libraries(sc-builder-lib
     LINK_PUBLIC sc-memory
     LINK_PUBLIC sc-config-utils
-    LINK_PRIVATE ${LIBXML2_LIBRARIES}
+    LINK_PRIVATE LibXml2::LibXml2
 )
 target_include_directories(sc-builder-lib
     PUBLIC ${SC_BUILDER_SRC}
-    PRIVATE ${LIBXML2_INCLUDE_DIR}
 )
 
 add_executable(sc-builder "${SC_BUILDER_SRC}/src/main.cpp")
