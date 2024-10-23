@@ -105,3 +105,5 @@ add_subdirectory(${SC_MACHINE_ROOT}/thirdparty)
 add_subdirectory(${SC_MACHINE_ROOT}/sc-memory)
 add_subdirectory(${SC_MACHINE_ROOT}/sc-kpm)
 add_subdirectory(${SC_MACHINE_ROOT}/sc-tools)
+
+add_subdirectory(${SC_MACHINE_ROOT}/connectors-module)
