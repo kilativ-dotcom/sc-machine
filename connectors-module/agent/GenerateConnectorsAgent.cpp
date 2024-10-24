@@ -10,17 +10,17 @@ ScAddr GenerateConnectorsAgent::GetActionClass() const
 
 std::set<ScType> connectorTypes =
 {
-ScType::Connector,
+//ScType::Connector,
 ScType::CommonEdge,
-ScType::Arc,
+//ScType::Arc,
 ScType::CommonArc,
 ScType::MembershipArc,
-ScType::ConstConnector,
-ScType::VarConnector,
+//ScType::ConstConnector,
+//ScType::VarConnector,
 ScType::ConstCommonEdge,
 ScType::VarCommonEdge,
-ScType::ConstArc,
-ScType::VarArc,
+//ScType::ConstArc,
+//ScType::VarArc,
 ScType::ConstCommonArc,
 ScType::VarCommonArc,
 ScType::ConstMembershipArc,
