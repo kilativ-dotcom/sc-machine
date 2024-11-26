@@ -5,6 +5,8 @@ on:
     branches: [main]
   workflow_call:
 
+  workflow_dispatch:
+
 jobs:
   build:
     name: Build and Run
@@ -24,7 +26,7 @@ jobs:
         with:
           push: false
           load: true
-          tags: ostis/sc-machine:latest
+          tags: ostis/sc-machine:amogus
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
